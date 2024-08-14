@@ -1,0 +1,257 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+
+
+// * Navbar 
+
+
+
+
+/* moon-dance-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Moon Dance";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/moon-dance-v6-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.navbar-brand {
+  font-family: "Moon Dance";
+  font-size: 30;
+}
+
+// * Section 1
+.image {
+  height: 100vh; /* Full viewport height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one {
+  background-image: url("../images/compass.jpg");
+}
+
+
+
+
+
+// * Section 2
+.three {
+  background-color: paleturquoise;
+}
+
+.story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  font-size: 25px;
+  // Add responsive styles here
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
+  // Decrease size of div text field
+  width: 70%; // Adjust the width as needed
+  margin: 0 auto; // Center the div horizontally
+}
+
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+.card {
+  display: inline-flex;
+  width: 30%;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+// * Section 3
+// .part2 {
+//   background-color: white;
+//   // position: relative;
+//   // width: 100%;
+//   // height: 1000px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.part2 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; // Stack vertically
+}
+.test {
+  font-size: 25px;
+}
+
+
+.pic1 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+
+
+.story2 {
+ content: 50px;
+}
+
+
+// * Link Forest
+.linkforest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  // Add responsive styles here
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
+  // Decrease size of div text field
+  width: 70%; // Adjust the width as needed
+  margin: 0 auto; // Center the div horizontally
+}
+
+
+// * Footer
+
+
+
+
+
+
+
+// * Link Forest
+#mainList {
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  list-style-type: none;
+  // Add responsive styles here
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
+  // Decrease size of div text field
+  width: 70%; // Adjust the width as needed
+  margin: 0 auto; // Center the div horizontally
+}
+ 
+
+
+
+
+// fade in animation
+.fade-in {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+// Navbar MEGA MENU
+.navbar-dark .navbar-nav a.nav-link {
+  color: #ffffff;
+  font-size: 1.1em;
+}
+.dropdown-menu {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: none;
+  border-radius: 0;
+  padding: 0.7em;
+}
+@media only screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  .dropdown-menu.show {
+    display: flex;
+  }
+}
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.Bold {
+  font-weight: bold;
+  font-size: 1.2em !important;
+  text-transform: uppercase;
+  color: #516beb !important;
+}
+.dropdown-menu li .dropdown-item {
+  color: gray;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+.dropdown-menu li .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #516beb;
+}
+.dropdown-menu li:first-child a:hover {
+  background-color: #f1f1f1;
+}
+@media only screen and (max-width: 992px) {
+  .dropdown-menu.show {
+    flex-wrap: wrap;
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+  .dropdown:hover .dropdown-menu {
+    width: 40vw;
+    flex-wrap: wrap;
+  }
+}
